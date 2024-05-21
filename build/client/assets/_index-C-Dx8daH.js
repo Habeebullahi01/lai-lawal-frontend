@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime-56DGgGmo.js";const a=()=>[{title:"Layi Lawal & Co"},{name:"description",content:"Layi Lawal & Co Chartered Accountants."}];function n(){return e.jsx("div",{className:"",children:e.jsx("h1",{children:"This is the home page."})})}export{n as default,a as meta};

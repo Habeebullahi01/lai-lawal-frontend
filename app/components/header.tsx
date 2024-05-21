@@ -1,4 +1,4 @@
-import { NavLink } from "@remix-run/react";
+import { NavLink, Link } from "@remix-run/react";
 // import { useEffect,FunctionComponent } from "react";
 // import { FunctionComponent } from "react"
 
@@ -13,38 +13,45 @@ export default function Header() {
       id="header"
       className="bg-dark text-light flex flex-row items-end justify-between relative h-14"
     >
-      <div className="">
-              {/* icon */}
-              <div className="imgCon w-10 inline-block mx-4">
-                  
-              <img alt="Logo" src="/images/logo-light-500.png" className="w-full" />
-              </div>
-        <span className="text-xl font-bold">Layi Lawal & Co<span className="xs:hidden lg:inline"> Chartered Accountants</span></span>
-      </div>
+      <Link to={"/"}>
+        <div className="">
+          {/* icon */}
+          <div className="imgCon w-10 inline-block mx-4">
+            <img
+              alt="Logo"
+              src="/images/logo-light-500.png"
+              className="w-full"
+            />
+          </div>
+          <span className="text-xl font-bold">
+            Layi Lawal & Co
+            <span className="xs:hidden lg:inline"> Chartered Accountants</span>
+          </span>
+        </div>
+      </Link>
 
-      <div
-        id="navCon"
-        className="mx-4"
-      >
+      <div id="navCon" className="mx-4">
         <button
           className="md:hidden"
           onClick={() => {
             const nav = document.getElementById("nav");
-            nav?.classList.replace("hidden","flex");
+            nav?.classList.replace("hidden", "flex");
             // nav?.classList.remove("hidden");
-        }}
+          }}
         >
-          
           <span className="material-symbols-outlined">menu</span>
         </button>
 
-        <nav id="nav" className="w-1/2 md:w-auto hidden h-[100vh] md:h-auto top-0 right-0 absolute md:relative py-8 md:p-0 bg-light text-dark md:text-light md:bg-dark flex-col md:flex md:flex-row  flex-auto z-10">
+        <nav
+          id="nav"
+          className="w-1/2 md:w-auto hidden h-[100vh] md:h-auto top-0 right-0 absolute md:relative py-8 md:p-0 bg-light text-dark md:text-light md:bg-dark flex-col md:flex md:flex-row  flex-auto z-10"
+        >
           <button
             className="md:hidden"
             onClick={() => {
               const nav = document.getElementById("nav");
-              nav?.classList.replace("flex","hidden");
-            //   nav?.classList.add("hidden");
+              nav?.classList.replace("flex", "hidden");
+              //   nav?.classList.add("hidden");
             }}
           >
             <span className="material-symbols-outlined">close</span>

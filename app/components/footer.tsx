@@ -20,7 +20,7 @@ export default function Footer() {
                     <ul className="text-lighter">
                         <li className="my-2"><a href="tel:+2348055421762"><span className="material-symbols-outlined">phone</span>Click to start phone call.</a></li>
                         <li className="my-2"><a href="mailto:lailawal810@gmail.com"><span className="material-symbols-outlined text-lg">mail</span>Send an email.</a></li>
-                        <li className="my-2"><span className="material-symbols-outlined">map</span>Block 7, Suite 5 Oodua Shopping Complex, Ojota, Lagos.</li>
+                        <li className="my-2"><span className="material-symbols-outlined">location_on</span>Block 7, Suite 5 Oodua Shopping Complex, Ojota, Lagos.</li>
                         {/* <li className="my-2">Advisory</li> */}
                     </ul>
                 </div>

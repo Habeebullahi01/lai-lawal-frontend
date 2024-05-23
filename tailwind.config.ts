@@ -11,6 +11,9 @@ export default {
         'serif': ['Merriweather', 'serif'],
         // 'cot': ['MerriweatherSans']
       },
+      backgroundImage: {
+        'hero': "url('/images/hero.jpg')"
+      }
     },
     screens: {
       'xs': '320px',
